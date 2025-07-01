@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container {
+  background-color: #F0E68C;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.twitter,
+.facebook,
+.instagram {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 0 17px;
+}
+
+.social i {
+  font-size: 60px;
+  line-height: 100px;
+}
+
+.twitter {
+  background-color: black;
+}
+
+.facebook {}
+
+.instagram {
+  background: linear-gradient(45deg, #FF9C02 0%, #FF0C52 35%, #FC01CF 100%);
+
+}

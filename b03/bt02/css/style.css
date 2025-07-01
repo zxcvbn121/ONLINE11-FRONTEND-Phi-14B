@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: green;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 50%;
+  transform: translate();
+
+}
+
+.box2 {
+  top: 50%;
+
+}
+
+.boxmini {
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  top: -25px;
+  left: -50px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Times New Roman';
+}
+
+.container {
+  background-color: #FED049;
+  width: 1000px;
+  font-size: 0;
+  margin: 50px auto;
+}
+
+.item {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 15px;
+  padding: 20px;
+  display: inline-block;
+  width: 220px;
+  vertical-align: middle;
+}
+
+.item:nth-child(odd) {
+  background-color: #007580;
+}
+
+.item:nth-child(even) {
+  background-color: #282846;
+}

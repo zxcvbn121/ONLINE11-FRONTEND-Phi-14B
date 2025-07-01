@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project {
+  width: 1903px;
+  border: 1px solid #333333;
+  background: #FFFFFF;
+}
+
+.project_top {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project_top .top_item {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 34.08px;
+}
+
+.project_top .top_item_last {
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 12px 26.23px 12px 27px;
+  border: 2px solid #1D1D2480;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.project_head {
+  width: 100%;
+  background: #F8F9FC;
+  padding: 150px 413.61px;
+}
+
+.head_left {
+  display: inline-block;
+  margin-right: 34.28px;
+}
+
+.head_left img {
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  border: 14px solid #FFFFFF;
+  box-shadow: 0px 20px 40px 0px #0000001A;
+}
+
+.head_right {
+  display: inline-block;
+}
+
+.head_right p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.project_body {
+  width: 100%;
+  padding-top: 120px;
+}
+
+.project_body h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #1D1D24;
+}
+
+.project_body .body_item {
+  width: 540.890625;
+  height: 440.3125;
+  display: inline-block;
+}
+
+.body_item img {
+  width: 540.890625;
+  height: 360.3125;
+  border-radius: 10px;
+  box-shadow: 0px 25px 65px 0px #0000001A;
+}
+
+.body_item p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #1D1D24;
+}
+
+.body_item h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #1D1D24;
+}
