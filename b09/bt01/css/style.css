@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 18px;
+  color: #292e33;
+}
+
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+}
+
+.app-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+main {
+  display: flex;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+aside {
+  width: 330px;
+  background-color: #225a92;
+  padding: 15px;
+  color: #f0f0f0;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.setting-item input,
+.setting-item select {
+  width: 140px;
+}
+
+.btn-font-size {
+  padding: 8px;
+  width: 40px;
+}
+
+.slb-align {
+  padding: 8px;
+  width: 140px;
+}
+
+.btn-background {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btn-gold {
+  background-color: #ffd700;
+}
+
+.btn-light {
+  background-color: #f0f0f0;
+}
+
+.btn-dark {
+  background-color: #292e33;
+}
+
+.input-color {
+  height: 40px;
+  border: none;
+}
+
+#content {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  line-height: 1.5;
+}

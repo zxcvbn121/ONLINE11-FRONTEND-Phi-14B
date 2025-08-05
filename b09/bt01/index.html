@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1 class="app-title">E-Reader</h1>
+  <div class="container">
+    <main>
+      <aside id="sidebar">
+        <div class="setting-item">
+          <label for="">Cỡ chữ</label>
+          <div>
+            <button type="button" class="btn-font-size decrease" id="btnFontSizeDecrease">-</button>
+            <button type="button" class="btn-font-size increase" id="btnFontSizeIncrease">+</button>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label for="">Cách dòng (<span id="lineHeightDisplayValue">1.5</span>)</label>
+          <input type="range" class="input-line-height" min="1" max="4" step="0.5" value="1.5" id="inputLineHeight">
+        </div>
+        <div class="setting-item">
+
+          <label for="">Căn lề</label>
+          <select class="slb-align" id="slbTextAlign">
+            <option value="left">Trái</option>
+            <option value="right">Phải</option>
+            <option value="center">Giữa</option>
+            <option value="justify">Đều</option>
+          </select>
+        </div>
+        <div class="setting-item">
+          <label for="">Màu nền</label>
+          <div>
+            <button onclick="ChangeBackgroundColor('white')" class="btn-background btn-light"></button>
+            <button onclick="ChangeBackgroundColor('yellow')" class="btn-background btn-gold"></button>
+            <button onclick="ChangeBackgroundColor('black')" class="btn-background btn-dark"></button>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label for="">Màu chữ</label>
+          <input type="color" class="input-color" id="inputColor" value="#292e33">
+        </div>
+      </aside>
+      <section id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem dolorem itaque sunt! Veritatis
+        illo animi deserunt omnis, tempore aliquam deleniti non voluptates officiis dolores nemo! Ipsa dolorem
+        autem veniam consectetur odio delectus alias molestias qui beatae sunt tempore sit, ipsum vel, nihil
+        harum totam iusto repellat ratione exercitationem placeat repellendus. Commodi velit dicta labore
+        possimus, numquam dolorem quia, sunt illum ea nemo mollitia aliquam asperiores reprehenderit rem
+        assumenda sit voluptas neque iusto nihil, sequi laudantium. Vel quas voluptatum saepe exercitationem cum
+        sunt, dolore magni ipsa consectetur distinctio non voluptates optio impedit, minus ea quos laudantium!
+        Autem dolor fuga quidem?
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
