@@ -28,6 +28,13 @@ ELEMENT_SUBMIT.addEventListener('click', function () {
   setItem(data)
 });
 
+ELEMENT_ENTER_KEYWORD.addEventListener('keydown', function (e) {
+  if (e.key == 'Enter') {
+    search()
+  }
+})
+
+
 getItem()
 
 

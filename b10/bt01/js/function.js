@@ -87,4 +87,42 @@ const handleEditItem = (id) => {
   // set id 
 }
 
+const search = () => {
+  let enterKeyWord = ELEMENT_ENTER_KEYWORD.value
+  // data = []
+  let newData = data.filter((item) => item.name.includes(enterKeyWord))
+  renderUI(newData)
+}
+
+
+const sortBy = (e) => {
+  let name;
+  let newData = [...data]
+  switch (e) {
+    case 'nameASC':
+      name = 'NAME - ASC'
+      newData.sort((a, b) => a.name - b.name)
+      break;
+    case 'nameDESC':
+      name = 'NAME - DESC'
+      const data = newData.sort((a, b) => a.name - b.name)
+      console.log(data)
+      break;
+    case 'levelASC':
+      name = 'LEVEL - ASC'
+      newData.sort((a, b) => a.level - b.level)
+      break;
+    case 'levelDESC':
+      name = 'LEVEL - DESC'
+      newData.sort((a, b) => b.level - a.level)
+      break;
+  }
+  console.log(newData)
+  renderUI(newData)
+
+  //data = []
+
+  ELEMENT_SORT_TITLE.innerHTML = name;
+}
+
 
