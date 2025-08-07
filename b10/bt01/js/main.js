@@ -4,28 +4,33 @@ ELEMENT_ADD_TASK.addEventListener('click', function () {
 });
 
 ELEMENT_SUBMIT.addEventListener('click', function () {
+  let inputID = ELEMENT_INPUT_ID.value
   let name = ELEMENT_INPUT_NAME.value
   let level = ELEMENT_INPUT_LEVEL.value
-  let object = {
-    id: randomId(),
-    name: name,
-    level: level
+  if (!inputID) {
+    let object = {
+      id: randomId(),
+      name: name,
+      level: level
+    }
+    if (name == '') {
+      alert('vui long nhap thong tin')
+      return
+    }
+    data.push(object)
+  } else {
+    let index = data.findIndex((item) => item.id == inputID)
+    data[index].name = name
+    data[index].level = level
   }
-  if (name == '') {
-    alert('vui long nhap thong tin')
-    return
-  }
-  data.push(object)
   renderUI(data)
   clearForm()
-  setItem()
+  setItem(data)
 });
 
 getItem()
 
-ELEMENT_DELETE_ITEM.addEventListener('click', function () {
-  console.log('aaaaaaaaaaaa')
-});
+
 
 
 // tach 2 phuong thuc local

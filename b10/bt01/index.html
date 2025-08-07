@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.22.2/sweetalert2.css"
+        integrity="sha512-aZNBVcDIrRR7lLUG3UsYBKkl9C0hJHhrXiPdUookOGZQB4h9g2dB48O+BfWjRPWZcVShQW76xtCwgGrliVu5sg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,6 +54,7 @@
                 <div class="row mt-3 hidden" id="area-form">
                     <div class="col-sm-5 offset-sm-7">
                         <div class="d-flex">
+                            <input type="text" id="input-id" hidden>
                             <input type="text" id="input-name" placeholder="Task Name" class="form-control me-1" />
                             <select id="input-level" class="form-select me-1" style="width: unset">
                                 <option value="Small">Small</option>
@@ -91,7 +94,11 @@
         <!-- LIST: END -->
     </div>
 
+
     <script src="js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.22.2/sweetalert2.min.js"
+        integrity="sha512-2bCb2rCmddSPBLbYUoGR9R+gmLU/kaoYiTM4OVG3Jz+6E26MTzdozuEYt5j3X60ueQ9x6Xufz7y3jhmrHiHLZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/const.js"></script>
     <script src="js/function.js"></script>
     <script src="js/main.js"></script>

@@ -12,6 +12,8 @@ const ELEMENT_BODY = document.getElementById('area-list-task')
 
 const ELEMENT_DELETE_ITEM = document.getElementById('btn-delete')
 
+const ELEMENT_INPUT_ID = document.getElementById('input-id')
+
 let data = []
 
 let isOpenForm = false

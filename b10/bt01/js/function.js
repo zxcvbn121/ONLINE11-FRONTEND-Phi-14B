@@ -30,8 +30,8 @@ const renderUI = (data) => {
         <td>${item.name}</td>
         <td><span class="badge bg-danger">${item.level}</span></td>
         <td>
-            <button class="btn btn-warning">Edit</button>
-            <button class="btn btn-danger" id="btn-delete">Delete</button>
+            <button class="btn btn-warning" onClick="handleEditItem('${item.id}')">Edit</button>
+            <button class="btn btn-danger" onClick="handleDeleteItem('${item.id}')">Delete</button>
         </td>
     </tr>
     `
@@ -42,9 +42,12 @@ const renderUI = (data) => {
 const clearForm = () => {
   ELEMENT_INPUT_NAME.value = ''
   ELEMENT_INPUT_LEVEL.value = 'Small'
+  ELEMENT_INPUT_ID.value = ''
+  toggleForm(false)
+
 }
 
-const setItem = () => {
+const setItem = (data) => {
   localStorage.setItem('phi', JSON.stringify(data))
 }
 
@@ -53,3 +56,35 @@ const getItem = () => {
   data = JSON.parse(newDataString || "[]")
   renderUI(data)
 }
+
+const handleDeleteItem = (id) => {
+  console.log(id)
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      data = data.filter((item) => item.id !== id)
+      renderUI(data)
+      setItem(data)
+      // xoa
+    }
+  });
+}
+
+const handleEditItem = (id) => {
+  let item = data.find((item) => item.id == id)
+  toggleForm(true)
+  ELEMENT_INPUT_NAME.value = item.name
+  ELEMENT_INPUT_LEVEL.value = item.level
+  ELEMENT_INPUT_ID.value = id
+
+  // set id 
+}
+
+
